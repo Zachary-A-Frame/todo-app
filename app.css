@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-size: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.card {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 5px 5px 0 0;
+  margin: auto;
+  width: 40%;
+  padding: 10px;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.todos {
+  padding-left: 25%;
+  padding-right: 25%;
+  font-size: 15px;
+  margin-top: 25px;
+}
+
+.remover {
+  background: none;
+  border: 2px solid red;
+  line-height: 1;
+  font-size: 21px;
+  float: right;
+  text-align: center;
+  color: inherit;
+  border-radius: 4px;
+}
+
+.new-li {
+  font-size: 21px;
+  margin: 10px 10px;
+  cursor: pointer;
+}
+
+li {
+  font-size: 21px;
+  margin: 10px 10px;
+  cursor: pointer;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.dark {
+  background-color: #121212;
+  color: white;
+}
+
+.lamp {
+  width: 10em;
+  display: inline-block;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-animation: lamp 3s forwards;
+          animation: lamp 3s forwards;
+}
+
+.bulb {
+  fill: white;
+  fill-opacity: 1.0;
+  -webkit-animation: bulb;
+          animation: bulb;
+}
+
+.bulbOff {
+  fill: #FBF8CA;
+  fill-opacity: 1.0;
+  -webkit-animation: bulbOff;
+          animation: bulbOff;
+}
+
+.switch {
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.switch:active {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+@-webkit-keyframes bulb {
+  to {
+    fill-opacity: 1.0;
+    fill: #FBF8CA;
+  }
+}
+
+@keyframes bulb {
+  to {
+    fill-opacity: 1.0;
+    fill: #FBF8CA;
+  }
+}
+
+@-webkit-keyframes bulbOff {
+  to {
+    fill-opacity: 1.0;
+    fill: #FBF8CA;
+  }
+}
+
+@keyframes bulbOff {
+  to {
+    fill-opacity: 1.0;
+    fill: #FBF8CA;
+  }
+}
+
+@-webkit-keyframes lamp {
+  5% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  10% {
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
+  }
+  15% {
+    -webkit-transform: rotate(-35deg);
+            transform: rotate(-35deg);
+  }
+  25% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  40% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  65% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+  85% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes lamp {
+  5% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  10% {
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
+  }
+  15% {
+    -webkit-transform: rotate(-35deg);
+            transform: rotate(-35deg);
+  }
+  25% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  40% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  65% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+  85% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+/*# sourceMappingURL=app.css.map */
